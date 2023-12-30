@@ -276,6 +276,16 @@ required-features = ["cancellation"]
 name = "cancellation-client"
 path = "src/cancellation/client.rs"
 
+[[bin]]
+name = "dirk-streaming-client"
+path = "src/dirk-streaming/client.rs"
+required-features = ["streaming"]
+
+[[bin]]
+name = "dirk-streaming-server"
+path = "src/dirk-streaming/server.rs"
+required-features = ["streaming"]
+
 
 [features]
 gcp = ["dep:prost-types", "tonic/tls"]
